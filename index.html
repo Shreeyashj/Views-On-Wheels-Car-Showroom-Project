@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Views On Wheels</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link  -->
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <img src="image/carlogo.png">
+    </a>
+    
+    <nav class="navbar">
+        
+        <a href="#home">home</a>
+        <a href="#vehicles">vehicles</a>
+        <a href="#services">services</a>
+        <a href="#featured">featured</a>
+        <a href="#reviews">reviews</a>
+        <a href="#contact">Details</a>
+    </nav>
+
+    <div id="login-btn">
+        <button id="demo"class="btn">login</button>
+        <i class="far fa-user"></i>
+        
+    </div>
+    <div id="demo" style="display: none;"></div>
+
+</header> 
+    
+<div id="login-form" class="login-form-container">
+
+    <span id="close-login-form" class="fas fa-times"></span>
+
+    <form action="">
+        <h3>user login</h3>
+        <input id="email" type="email" placeholder="email" class="box">
+        <input id="password" placeholder="password" class="box">
+        <p> forget your password <a href="#">click here</a> </p>
+        <button type="submit" value="login" class="btn" onclick="savelogin(email,password,true)">Login</button>
+        <p>or login with</p>
+        <div class="buttons">
+            <a href="#" class="btn"> google </a>
+            <a href="#" class="btn"> facebook </a>
+        </div>
+        <p> don't have an account <a href="#">create one</a> </p>
+    </form>
+
+</div>
+
+<section class="home" id="home">
+
+    <h3 data-speed="-2" class="home-parallax">find your car</h3>
+
+    <img data-speed="5" class="home-parallax" src="image/new/bmw-m3-m4-individual-stage-teaser-022.jpg" alt="">
+
+    <a data-speed="7" href="#" class="btn home-parallax">explore cars</a>
+
+</section>
+<div id="snackbar">Login successfully..</div>
+
+
+<section class="icons-container">
+
+    <a href="https://cars.tatamotors.com/"><div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>TATA</h3>
+            <p></p>
+        </div>
+    </div></a>
+
+    <a href="https://auto.mahindra.com/suv"><div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>MAHINDRA</h3>
+            <p></p>
+        </div>
+    </div></a>
+
+    <a href="https://www.marutisuzuki.com/"><div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+            <h3>SUZUKI</h3>
+            <p></p>
+        </div>
+    </div></a>
+
+    <a href="https://www.hondacarindia.com/"><div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>HONDA</h3>
+            <p></p>
+        </div>
+    </div></a>
+
+    <a href="https://www.toyotabharat.com/"><div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>TOYOTA</h3>
+            <p></p>
+        </div>
+    </div></a>
+    <a href="https://www.bmw.in/en/index.html"><div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>BMW</h3>
+            <p></p>
+        </div>
+    </div></a>
+    <a href="https://www.mercedes-benz.co.in/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE"><div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>MERCEDES</h3>
+            <p></p>
+        </div>
+    </div></a>
+    <a href="https://www.volkswagen.co.in/en.html"><div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>Volkswagen</h3>
+            <p></p>
+        </div>
+    </div></a>
+
+</section>
+
+<section class="vehicles" id="vehicles">
+
+    <h1 class="heading"> popular <span>vehicles</span> </h1>
+
+    <div class="swiper vehicles-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="./image/new/fortunerfortunerrightfrontthreequarter__1_-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Toyota Fortuner</h3>
+                    <div class="price"> <span>price : </span> Rs. 40.08 - 62.40 Lakh On-Road Price, Mumbai </div>
+                    <p>
+                        2694 to 2755 cc.
+                        <span class="fas fa-circle"></span> 10 to 14.4 kmpl.
+                        <span class="fas fa-circle"></span> Petrol & Diesel Manual & Automatic.
+                        <span class="fas fa-circle"></span> 5 Star (ANCAP).
+                        <span class="fas fa-circle"></span> 7 Seater.
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/17/1309/oygakqg.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./image/new/nexonnexonrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Tata Nexon</h3>
+                    <div class="price"> <span>price : </span> Rs. 9.55 - 18.72 Lakh On-Road Price, Mumbai </div>
+                    <p>
+                        
+                        1199 to 1497 cc
+                        <span class="fas fa-circle"></span> 17.01 to 24.08 kmpl
+                        <span class="fas fa-circle"></span> petrol, Diesel & Electric.  Manual & automatic
+                        <span class="fas fa-circle"></span> 5 Star (G NCAP)
+                        <span class="fas fa-circle"></span> 5 Seater.
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/16/2333/8nquc6g.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/xuv700xuv700rightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Mahindra XUV700</h3>
+                    <div class="price"> <span>price : </span> Rs. 16.84 - 32.38 Lakh On-Road Price, Mumbai </div>
+                    <p>
+                        
+                        1997 to 2184 cc
+                        <span class="fas fa-circle"></span> 13.25 to 16.38 kmpl. 
+                        <span class="fas fa-circle"></span> Petrol & Diesel. Manual & automatic.
+                        <span class="fas fa-circle"></span> 5 Star (Global NCAP).
+                        <span class="fas fa-circle"></span> 5 & 7 Seater.
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/9/1290/0dsnqtf.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/innovahycrossinnovahycrossrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Innova Hycross</h3>
+                    <div class="price"> <span>price : </span> Rs. 23.72 - 36.56 Lakh On-Road Price, Mumbai </div>
+                    <p>
+                        1987cc
+                        <span class="fas fa-circle"></span> 16.13 to 23.24 kmpl
+                        <span class="fas fa-circle"></span> Petrol & Hybrid Manual & automatic
+                        <span class="fas fa-circle"></span> -
+                        <span class="fas fa-circle"></span> 7 & 8 Seater
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/17/1821/5wlnv4g.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/virtusvirtusrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Volkswagen Virtus</h3>
+                    <div class="price"> <span>price : </span> Rs. 13.57 - 22.84 Lakh
+                        On-Road Price, Mumbai </div>
+                    <p>
+                        999 to 1498 cc
+                        <span class="fas fa-circle"></span> 
+                        18.45 to 20.8 kmpl
+                        <span class="fas fa-circle"></span> Petrol
+                        Manual & automatic
+                        <span class="fas fa-circle"></span> 
+                        5 Star (Global NCAP)
+                        <span class="fas fa-circle"></span> 5 Seater
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/20/2431/gvah0ug.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/hiluxhiluxrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Toyota Hilux</h3>
+                    <div class="price"> <span>price : </span> Rs. 36.93 - 45.90 Lakh
+                        On-Road Price, Mumbai </div>
+                    <p>
+                        2755 cc
+                        <span class="fas fa-circle"></span> 15 to 20 kmpl
+                        <span class="fas fa-circle"></span> 
+                        Diesel
+                        Manual & Automatic
+                        <span class="fas fa-circle"></span> 5 stars (Euro NCAP)
+                        <span class="fas fa-circle"></span> 
+                        5 Seater Semi-truck
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/17/1773/tp16jqg.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<section class="vehicles" id="vehicles">
+
+    <h1 class="heading"> Luxury
+         <span>vehicles</span> </h1>
+
+    <div class="swiper vehicles-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="./image/new/m8-removebg-preview (1).png" alt="">
+                <div class="content">
+                    <h3>BMW M8</h3>
+                    <div class="price"> <span>price : </span> Rs. 2.89 Crore
+                        On-Road Price, Mumbai </div>
+                    <p>
+                        
+                        twin-turbocharged V8 4395 cc.
+                        <span class="fas fa-circle"></span> 
+                        591 bhp & 750 Nm.
+                        <span class="fas fa-circle"></span> 
+                        Petrol.
+                        <span class="fas fa-circle"></span> 
+                        AWD 298 kmph.
+                        <span class="fas fa-circle"></span> 0-100 3.2 seconds.
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/1/1351/f0yh34g.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./image/new/huracanstohuracanstorightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Lamborghini Huracan STO</h3>
+                    <div class="price"> <span>price : </span> Rs. 5.89 Crore </div>
+                    <p>
+                        V10 5204 cc.
+                        <span class="fas fa-circle"></span>630 bhp & 565 Nm.      
+                        <span class="fas fa-circle"></span> automatic petrol.
+                        <span class="fas fa-circle"></span> RWD 310 kmph.
+                        <span class="fas fa-circle"></span> 0-100 3 seconds.
+                    </p>
+                    <a href="https://www.lamborghini.com/en-en/models/huracan/huracan-sto" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./image/new/gtgtrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>McLaren GT</h3>
+                    <div class="price"> <span>price : </span> Rs. 4.28 Crore
+                        On-Road Price, Delhi </div>
+                    <p>
+                        V8 3994 cc
+                        <span class="fas fa-circle"></span> 
+                        612 bhp & 630 Nm
+                        
+                        <span class="fas fa-circle"></span> automatic petrol
+                        <span class="fas fa-circle"></span> RWD
+                        326 kmph
+                        <span class="fas fa-circle"></span> 3.2 seconds
+                    </p>
+                    <a href="https://stc.aeplcdn.com/f/brochure/77/1455/vlmkl4g.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./image/new/amgsl55roadsterhyperbluemetallic-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Mercedes-Benz AMG SL55 Roadster</h3>
+                    
+                    <div class="price"> <span>price : </span> Rs. 2.78 Crore
+                        On-Road Price, Mumbai </div>
+                    <p>
+                        
+                        3982 cc
+                        <span class="fas fa-circle"></span> 469 bhp & 700 Nm
+                        <span class="fas fa-circle"></span> automatic petrol
+                        <span class="fas fa-circle"></span> AWD 295 kmph
+                        
+                        <span class="fas fa-circle"></span> 3.9 seconds
+                    </p>
+                    <a href="https://autocatalogarchive.com/wp-content/uploads/2022/04/Mercedes-SL-2022-UK.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./image/new/228055c4b9e04b929b513edd1aeeb5b8-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Mercedes-Benz G-Class</h3>
+                    <div class="price"> <span>price : </span> Rs. 3.07 - 4.73 Crore
+                        On-Road Price, Mumbai </div>
+                    <p>
+                        2925 to 3982 cc
+                        <span class="fas fa-circle"></span> 326 to 577 bhp & 700 to 850 Nm.
+                        <span class="fas fa-circle"></span> Manual & automatic Petrol & Diesel.
+                        <span class="fas fa-circle"></span> 
+                        4WD / AWD 210 to 220 kmph.
+                        <span class="fas fa-circle"></span> 
+                        4.5 to 6.4 seconds
+                    </p>
+                    <a href="https://autocatalogarchive.com/wp-content/uploads/2022/06/Mercedes-G-63-AMG-2022-IN.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./image/new/most-expensive-2023-porsche-911-gt3-rs__1_-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Porche GT3 RS</h3>
+                    <div class="price"> <span>price : </span> Rs. 4.89 Crore </div>
+                    <p>
+                        naturally aspirated 4.0-liter six-cylinder 3996 cc
+                        <span class="fas fa-circle"></span> 517.63bhp@8500-9000rpm
+                        <span class="fas fa-circle"></span> automatic petrol
+                        <span class="fas fa-circle"></span> RWD 330 kmph
+                        <span class="fas fa-circle"></span> 0-100 3.1 seconds
+                    </p>
+                    <a href="https://docs.dealerfire.com/public/Porsche/Models/911_GT3_Catalogue.pdf" class="btn">check out to download brochure</a>
+                </div>
+            </div>
+
+</section>            
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Latest <span>News <span> -What it is?</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>New Skoda Superb to be unveiled tomorrow</h3>
+            <p>2024 Superb interiors have been partially revealed</p>
+               <p> India-spec model likely to get only the 2.0-litre turbo-petrol motor</p>
+            <a href="https://www.carwale.com/news/new-skoda-superb-to-be-unveiled-tomorrow/" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>Tata Motors registers 48,337 unit sales in October 2023</h3>
+            <p>7 per cent Y-o-Y growth </p>
+            <p>EV sales grew by 28 per cent testing the upcoming Tata Punch EV and the Curvv SUV. </p>
+            <a href="https://carwale.com/news/tata-motors-registers-48337-unit-sales-in-october-2023/" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>Top cars under Rs. 10 lakh with 6 airbags</h3>
+            <p>Hyundai Grand i10 Nios</p>
+            <p>Baleno</p>
+            <p>Hyundai Exter</p>
+            <p>Tata Altroz</p>
+            <a href="https://www.carwale.com/news/top-cars-under-rs-10-lakh-with-6-airbags/" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>Upcoming car launches and unveils in November 2023</h3>
+            <p>Mercedes-Benz GLE facelift</p>
+            <p>Mercedes-Benz AMG C 43</p>
+            <p>New Renault Duster</p>
+            <p>Tata Punch EV</p>
+            <a href="https://www.carwale.com/news/upcoming-car-launches-and-unveils-in-november-2023/" class="btn"> read more</a>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Expert<span>Reviews <span> -What it is?</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>Tata Harrier - Jay Saha</h3>
+            <p>Grand road presence</p>
+               <p> Feature additions</p>
+               <p> Strong performance</p>
+            <a href="https://www.carwale.com/tata-cars/harrier-facelift/expert-reviews/2023-tata-harrier-facelift-first-drive-review/" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>Tata Nexon - Ninad Ambre</h3>
+            <p>Interior look and features</p>
+            <p>Added safety</p>
+            <p>Comfortable ride</p>
+            <a href="https://www.carwale.com/tata-cars/nexon-facelift/expert-reviews/new-tata-nexon-first-drive-review/" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>Lexius XD500d - Desirazu Venkat</h3>
+            <p>Massive presence</p>
+             <p> Huge cabin space</p>
+             <p> Long-distance cruising ability</p>
+            <a href="https://www.carwale.com/lexus-cars/lx/expert-reviews/lexus-lx500d-2023-first-drive-review/" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>Kia Seltos - Aditya Nadkarni</h3>
+            <p>Refreshing turbo-power</p>
+            <p>Level-2 ADAS suite</p>
+            <p>Useful new features in a spacious cabin</p>
+            <a href="https://carwale.com/kia-cars/seltos-facelift/expert-reviews/kia-seltos-facelift-first-look/" class="btn"> read more</a>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>SUV featured</span> cars </h1>
+
+    <div class="swiper featured-slider">
+
+       <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/new/harrierharrierrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Tata Harrier</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs. 18.91 - 29.88 Lakh
+                        On-Road Price, Mumbai</div>
+                    <a href="https://stc.aeplcdn.com/f/brochure/16/2241/wnnn3rg.pdf" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/thareverestwhite-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Mahindra THAR</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs. 13.30 - 20.64 Lakh
+                        On-Road Price, Mumbai</div>
+                    <a href="https://stc.aeplcdn.com/f/brochure/9/1260/raokqtf.pdf" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/jimnyjimnyrightfrontthreequarter-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Maruti Suzuki Jammny</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs. 14.91 - 17.58 Lakh
+                        On-Road Price, Mumbai</div>
+                    <a href="https://stc.aeplcdn.com/f/brochure/10/1323/7bm57bf.pdf" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/new/elevateelevaterightfrontthreequarter__1_-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>Honda Elevate</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs. 13.13 Lakh On-Road Price, Mumbai</div>
+                    <a href="https://stc.aeplcdn.com/f/brochure/7/2349/91o8vmg.pdf" class="btn">check out</a>
+                </div>
+            </div>
+
+       </div>
+
+       <div class="swiper-pagination"></div>
+
+    </div>
+    
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>Value For Money</span> cars </h1>
+    
+        <div class="swiper featured-slider">
+    
+           <div class="swiper-wrapper">
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+ 
+             <div class="swiper-slide box">
+                 <img src="image/new/wagonrwagonrrightfrontthreequarter-removebg-preview.png" alt="">
+                 <div class="content">
+                     <h3>maruti suzuki Wagonr</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">Rs. 6.48 - 8.69 Lakh</div>
+                     <a href="https://stc.aeplcdn.com/f/brochure/10/1811/pnduptf.pdf" class="btn">check out</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/new/swiftswiftrightfrontthreequarter-removebg-preview.png" alt="">
+                 <div class="content">
+                     <h3>Maruti suzuki Swift</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">Rs. 7.03 - 10.50 Lakh
+                    </div>
+                     <a href="https://stc.aeplcdn.com/f/brochure/10/1417/5e4nptf.pdf" class="btn">check out</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/new/grandi10niosgrandi10niosrightfrontthreequarter-removebg-preview.png" alt="">
+                 <div class="content">
+                     <h3>hyundai grand i10 nios</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">Rs. 6.93 - 9.93 Lakh</div>
+                     <a href="https://stc.aeplcdn.com/f/brochure/8/2177/rgncrig.pdf" class="btn">check out</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/new/kwidkwidrightfrontthreequarter-removebg-preview.png" alt="">
+                 <div class="content">
+                     <h3>Renault KWID</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">Rs. 5.55 - 7.56 Lakh</div>
+                     <a href="https://stc.aeplcdn.com/f/brochure/45/2313/6ku7kdg.pdf" class="btn">check out</a>
+                 </div>
+             </div>
+ 
+        </div>
+ 
+        <div class="swiper-pagination"></div>
+        </div>
+ 
+     </div>
+
+</section>
+
+
+
+</section>
+
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>contact</span> us</h1>
+
+    <div class="row" id="hideDetails">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120708.24790733075!2d72.6731348972656!3d19.01387130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfa2013299c3%3A0x8cdf779fd6525450!2sMcLaren%20Mumbai%20%7C%20McLaren%20Showroom%20in%20India!5e0!3m2!1sen!2sin!4v1698859110281!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form >
+            <h3>get in touch For Showroom Information and Enquiry.</h3>
+            <input id="nameuser" type="text" placeholder="your name" class="box">
+            <input id="myemail" type="email" placeholder="your email" class="box">
+            <input id="subject"type="tel" placeholder="Phone No." class="box">
+            <textarea id="msg" placeholder="your message" class="box" cols="30" rows="10"></textarea>
+            <button value="" type="submit" value="send message" class="btn" onclick="">Submit
+        </form>
+
+    </div>
+    <!-- <div class="row" id="showDetails">
+            <div id="showName"></div>
+            <div id="showEmail"></div>
+            <div id="showSubject"></div>
+            <div id="showMsg" class="box" cols="30" rows="10"></div>
+
+    </div> -->
+
+</section>
+
+<!-- <div id="snackbar"></div>
+<div id="snackbarsubmit"></div> -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> client's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="./image/shree.png" alt="">
+                <div class="content">
+                    <p>While comparing to other websites here it shows the best reccomendation about cars and prices of them.</p>
+                    <h3>Shreeyash</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/priyanka.png" alt="">
+                <div class="content">
+                    <p>Can't believe I'm buying my dream Car at such low Price.Really appriciate the team.</p>
+                    <h3>Priyanka</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/rohan.png" alt="">
+                <div class="content">
+                    <p>These cars are available at really reasonable price.Thanks.</p>
+                    <h3>rohan</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/soham.png" alt="">
+                <div class="content">
+                    <p>I was spectical first but I loved the company's services.</p>
+                    <h3>Soham</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/sat.png" alt="">
+                <div class="content">
+                    <p>Expectation from this car was really high and delivered it pretty well.</p>
+                    <h3>Satyam</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/sayali.png" alt="">
+                <div class="content">
+                    <p>Excellent services.Will reccomend everyone who wants to buy and sell Cars.</p>
+                    <h3>riya</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Mumbai </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Pune </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Banglore </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Delhi </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> vehicles </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> viewsonwheels@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>  India - Mumbai-vasai 401201 </a>
+        </div>
+
+        <div class="box">
+            <h3>Social info</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i>Insatagram</a>
+            <a href="#"> <i class="fab fa-twitter"></i> X </a>
+            <a href="#"> <i class="fab fa-instagram"></i> META </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> Views On Wheels </div>
+    <div class="credit"> carwale.com </div>
+    <div class="credit"> Project made for Vidyavardhini's College of engineering, Vasai  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
